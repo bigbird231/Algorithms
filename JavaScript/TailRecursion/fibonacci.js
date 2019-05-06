@@ -26,4 +26,20 @@
         }
         return tailFibo(n-1,prev,next);
     }
+    
+    //或
+    function tailFibo1(n,prev,next){
+        if(next===undefined){
+            prev=0;
+            next=1;
+        }else{
+            let temp=next;
+            next=temp+prev;
+            prev=temp;
+        }
+        if(n===0){
+            return prev;
+        }
+        return tailFibo(n-1,prev,next);
+    }
 })();
