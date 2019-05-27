@@ -70,7 +70,8 @@
         function getRandomArray(length){
             let arr=[];
             for(let i=0;i<length;i++){
-                arr.push(Math.floor(Math.random()*100));
+                //[0,100]
+                arr.push(Math.floor(Math.random()*101));
             }
             return arr;
         }
@@ -81,6 +82,7 @@
             for(let i=0;i<times;i++){
                 let arr=getRandomArray(length);
                 let start=new Date().getTime();
+                //func.call(arr);
                 func(arr);
                 let end=new Date().getTime();
                 amount+=end-start;
@@ -118,10 +120,14 @@
     //Test.testAvgRunTime(insertSort,10000);
     //38.92ms
     //Test.testAvgRunTime(insertSort1,10000);
-    //38.71
+    //38.71ms
     //Test.testAvgRunTime(selectSort,10000);
-    //288.07
+    //288.07ms
     //Test.testAvgRunTime(bubleSort,10000);
+    //3.82ms
+    //Test.testAvgRunTime(Array.prototype.sort,10000);
+    //16.46ms
+    //Test.testAvgRunTime(quickSort,10000);
 
     //验证算法正确性
     //Test.testFuncCorrect([bubleSort,selectSort,insertSort,insertSort1]);
