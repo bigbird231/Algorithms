@@ -17,5 +17,6 @@ A bundle of duplicated implement of data structure and complex algorithm.
 - RecursiveCopy
 - BaseSort
 - AdvancedSort
+- IntegerSort
 - Fibonacci
 - BinarySearchTree
