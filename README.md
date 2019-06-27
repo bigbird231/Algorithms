@@ -11,3 +11,11 @@ A bundle of duplicated implement of data structure and complex algorithm.
 - RedBlackTree
 
 ## JavaScript
+
+- BinarySearch
+- JsonCopy
+- RecursiveCopy
+- BaseSort
+- AdvancedSort
+- Fibonacci
+- BinarySearchTree
